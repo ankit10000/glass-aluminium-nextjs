@@ -7,3 +7,11 @@
     height: 90vh;
     width: 100%;
 }
+.headbar{
+    width: 100vw;
+    height: 30px;
+    background-color: black;
+}
+.inner_text_headbar1{
+    padding-top: 5px;
+}
