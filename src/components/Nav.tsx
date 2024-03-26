@@ -5,12 +5,12 @@ import '../css/style.css';
 
 export default function Nav() {
     return (
-        <header id="fh5co-header-section" className="sticky-banner">
+        <header id="fh5co-header-section" className="sticky-banner ">
         <div className="container">
             <div className="nav-header">
-                {/* <a href="#" className="js-fh5co-nav-toggle fh5co-nav-toggle dark"><i></i></a> */}
+                <a href="#" className="js-fh5co-nav-toggle fh5co-nav-toggle dark"><i></i></a>
                 <h1 id="fh5co-logo"><a href="index.html"><i className="icon-home"></i><span>The Floor Decor</span></a></h1>
-                <nav id="fh5co " role="navigation">
+                <nav id="fh5co-menu-wrap"  role="navigation">
                     <ul className="sf-menu" id="fh5co-primary-menu">
                         <li className="active"><a href="index.html">Home</a></li>
                         <li>
@@ -22,7 +22,7 @@ export default function Nav() {
                                 <li><a href="#">Iron</a></li>
                             </ul>
                         </li>
-                        <li><a href="#">Agent</a></li>
+                        <li><a href="#">Recent Work</a></li>
                         <li><a href="#">Contact</a></li>
                     </ul>
                 </nav>
