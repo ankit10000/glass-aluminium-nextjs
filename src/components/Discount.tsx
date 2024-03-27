@@ -39,15 +39,15 @@ const callouts = [
 export default function Example() {
   return (
     <div className="bg-gray-100">
-      <div className="mx-auto width_discount px-4 sm:px-6 lg:px-8">
-        <div className="mx-auto max-w-2xl pb-16 sm:pb-24 lg:max-w-none lg:pb-32 lg:pt-20 ">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div className="mx-auto max-w-2xl py-16 sm:py-24 lg:max-w-none lg:py-32 ">
           <h2 className="text-5xl font-bold text-gray-900 text-center">
             Trending Categories
           </h2>
 
-          <div className="mt-10 space-y-12 lg:grid lg:grid-cols-3  lg:space-y-0 gap-y-28 ">
+          <div className="mt-6 space-y-12 lg:grid lg:grid-cols-3 lg:gap-x-6 lg:space-y-0">
             {callouts.map((callout) => (
-              <div key={callout.name} className="group relative">
+              <div key={callout.name} className="group relative m-auto ">
                 <a href={"#"}>
 
                 <div className="flip-card">

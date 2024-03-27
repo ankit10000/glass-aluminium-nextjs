@@ -147,3 +147,80 @@
 .inner_container_contact{
   width: 83rem !important;
 }
+@media (min-width: 576px) and (max-width: 992px) {
+  .collapsed{
+    display: none !important;
+    flex-direction: column;
+  }
+  .collapsed.active {
+    display: flex!important;
+}
+  .navbar-toggler-nav {
+    display: block !important;
+  }
+
+}
+@media screen and (max-width: 575px) {
+  .collapsed{
+    display: none !important;
+    flex-direction: column;
+  }
+  .collapsed.active {
+    display: flex!important;
+}
+  .navbar-toggler-nav {
+    display: block !important;
+    right: 15px;
+  }
+  .inner_container_contact{
+    width: 30rem !important;
+  }
+  .flip-card1 {
+    background-color: transparent;
+    width: 250px;
+    height: 380px;
+    perspective: 1000px;
+    font-family: sans-serif;
+  }
+  .work-video{
+    height: 380px;
+    width: 250px;
+  }
+  .flip-card-inner1 {
+    position: relative;
+    width: 85%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+.flip-card {
+  background-color: transparent;
+  width: 280px;
+  height: 480px;
+  perspective: 1000px;
+  font-family: sans-serif;
+}
+.nav-header h1 span{
+  font-size: 20px;
+}
+#fh5co-header-section {
+  position: fixed!important;
+  top: 0px;
+  width: 90% !important;
+}
+
+}
+
+.navbar-toggler-nav {
+  cursor: pointer;
+  color: #ff0000;
+  font-size: 24px;
+  display: none;
+  opacity: 10;
+  position: absolute;
+  right: 10px;
+  top: 12px;
+  border: 2px solid #00d866;
+  border-radius: 5px;
+}
