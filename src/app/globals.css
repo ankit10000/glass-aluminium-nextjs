@@ -86,8 +86,8 @@
 }
 .flip-card {
   background-color: transparent;
-  width: 320px;
-  height: 480px;
+  width: 240px;
+  height: 350px;
   perspective: 1000px;
   font-family: sans-serif;
 }
@@ -167,9 +167,9 @@
   transform: rotateY(180deg);
 }
 .dis_work_h1 {
-  position: absolute;
+  /* position: absolute;
   top: 480px;
-  left: 90px;
+  left: 90px; */
 }
 .width_discount {
   width: 110rem;
@@ -282,7 +282,7 @@
   #fh5co-header-section {
     position: fixed !important;
     top: 0px;
-    width: 94% !important;
+    width: 99% !important;
   }
   .headbar {
     width: 100%;
@@ -330,3 +330,4 @@
   border: 2px solid #00d866;
   border-radius: 5px;
 }
+/*   */

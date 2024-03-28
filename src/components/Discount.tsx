@@ -39,15 +39,15 @@ const callouts = [
 export default function Example() {
   return (
     <div className="bg-gray-100">
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="mx-auto max-w-2xl py-16 sm:py-24 lg:max-w-none lg:py-32 ">
+      <div className="m-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div className=" m-auto py-16  lg:max-w-none lg:pb-32 ">
           <h2 className="text-5xl font-bold text-gray-900 text-center">
             Trending Categories
           </h2>
 
-          <div className="mt-6 space-y-12 lg:grid lg:grid-cols-3 lg:gap-x-6 lg:space-y-0">
+          <div className="mt-6 gap-x-10 space-y-12 lg:grid lg:grid-cols-3 lg:gap-x-6 lg:space-y-0">
             {callouts.map((callout) => (
-              <div key={callout.name} className="group relative m-auto ">
+              <div key={callout.name} className="group relative w-96 m-auto">
                 <a href={"#"}>
 
                 <div className="flip-card">
@@ -58,7 +58,6 @@ export default function Example() {
                         alt={callout.imageAlt}
                         className="h-full w-full rounded-lg"
                       />
-                      <h2 className="mt-6 dis_work_h1 text-gray-900" >{callout.name}</h2>
                     </div>
                     <div className="flip-card-back">
                       <img
@@ -66,11 +65,11 @@ export default function Example() {
                         alt={callout.imageAlt}
                         className="h-full w-full "
                       />
-                      <h2 className="mt-6 dis_work_h1 text-gray-900" >{callout.name}</h2>
                     </div>
                   </div>
                   {/* <p className="text-base font-semibold text-gray-900">{callout.description}</p> */}
                 </div>
+                      <h2 className="mt-6 dis_work_h1 text-center text-gray-900" >{callout.name}</h2> 
                 </a>
               </div>
             ))}
