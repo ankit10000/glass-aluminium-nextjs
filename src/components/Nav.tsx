@@ -3,6 +3,9 @@ import '../css/bootstrap.css';
 import '../css/icomoon.css';
 import '../css/superfish.css';
 import '../css/style.css';
+import '../css/animate.css'
+import '../css/flexslider.css'
+
 import { IoMenu } from "react-icons/io5";
 
 export default function Nav() {
@@ -21,7 +24,7 @@ export default function Nav() {
                         <li className="active"><a href="#home">Home</a></li>
                         <li>
                             <a href="#category" className="fh5co-sub-ddown">Category</a>
-                            <ul className="fh5co-sub-menu">
+                            <ul className="fh5co-sub-menu dropdown_list">
                                 <li><a href="#">Glass</a></li>
                                 <li><a href="#">Furniture</a></li>
                                 <li><a href="#">Aluminium</a></li>

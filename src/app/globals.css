@@ -3,6 +3,18 @@
 @tailwind utilities;
 
 
+.dropdown_list li a{
+  /* background-color: aliceblue; */
+  color: #00000080 !important;
+}
+.dropdown_list{
+  background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2) !important; /* Shadow applied to the dropdown content */
+    z-index: 1 !important;
+    border-radius: 8px;
+}
+
 html {
   scroll-behavior: smooth;
 }
