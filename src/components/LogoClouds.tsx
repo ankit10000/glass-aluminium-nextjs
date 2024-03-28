@@ -46,6 +46,7 @@ export default function LogoClouds() {
             />
           </div>
         </div>
+        <div id="category"></div>
       </div>
     )
   }

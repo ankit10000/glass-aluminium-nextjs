@@ -38,7 +38,7 @@ const callouts = [
 
 export default function Example() {
   return (
-    <div className="bg-gray-100">
+    <div className="bg-gray-100" >
       <div className="m-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className=" m-auto py-16  lg:max-w-none lg:pb-32 ">
           <h2 className="text-5xl font-bold text-gray-900 text-center">
@@ -76,6 +76,7 @@ export default function Example() {
           </div>
         </div>
       </div>
+      <div id="recentwork"></div>
     </div>
   );
 }

@@ -67,6 +67,7 @@ export default function Example() {
           </div>
         </div>
       </div>
+      <div id="contact"></div>
     </div>
   );
 }

@@ -9,6 +9,7 @@ export default function Nav() {
     
     
     return (
+        <>
         <header id="fh5co-header-section" className="sticky-banner ">
         <div className="container">
             <div className="nav-header">
@@ -17,9 +18,9 @@ export default function Nav() {
                 <IoMenu color='#00d866' id="navbarToggler" size={30} className=' navbar-toggler-nav ' />
                 <nav id="fh5co-menu-wrap" className=''  role="navigation">
                     <ul className="sf-menu collapsed" id="fh5co-primary-menu collapsedLinks">
-                        <li className="active"><a href="index.html">Home</a></li>
+                        <li className="active"><a href="#home">Home</a></li>
                         <li>
-                            <a href="#" className="fh5co-sub-ddown">Category</a>
+                            <a href="#category" className="fh5co-sub-ddown">Category</a>
                             <ul className="fh5co-sub-menu">
                                 <li><a href="#">Glass</a></li>
                                 <li><a href="#">Furniture</a></li>
@@ -27,12 +28,14 @@ export default function Nav() {
                                 <li><a href="#">Iron</a></li>
                             </ul>
                         </li>
-                        <li><a href="#">Recent Work</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="#recentwork">Recent Work</a></li>
+                        <li><a href="#contact">Contact</a></li>
                     </ul>
                 </nav>
             </div>
         </div>
     </header>
+    <div id="home"></div>
+    </>
     );
   }
