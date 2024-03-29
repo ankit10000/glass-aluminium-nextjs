@@ -5,12 +5,11 @@ import '../css/superfish.css';
 import '../css/style.css';
 import '../css/animate.css'
 import '../css/flexslider.css'
-
 import { IoMenu } from "react-icons/io5";
 
 export default function Nav() {
     
-    
+
     return (
         <>
         <header id="fh5co-header-section" className="sticky-banner ">

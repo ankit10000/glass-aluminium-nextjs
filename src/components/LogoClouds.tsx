@@ -1,4 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
+"use client";
+
+import { useEffect } from "react";
 
 const stats = [
   { id: 1, name: 'Transactions every 24 hours', value: '44 million' },
