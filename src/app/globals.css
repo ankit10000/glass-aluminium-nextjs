@@ -347,3 +347,7 @@ html {
   border-radius: 5px;
 }
 /*   */
+.bg-gray-900 {
+  --tw-bg-opacity: 1;
+  background-color: #00000080 !important;
+}

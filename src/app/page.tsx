@@ -7,6 +7,7 @@ import LogoClouds from "@/components/LogoClouds";
 import Carousel from "@/components/Carousel";
 import LatestWork from "@/components/LatestWork";
 import Contact from "@/components/Contact";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
       <Discount/>
       <LatestWork/>
       <Contact />
+      <Footer/>
     </div>
   );
 }
