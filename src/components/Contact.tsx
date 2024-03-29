@@ -41,7 +41,7 @@ export default function Contact() {
           <div className="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6  container">
             {/* <img src={map.src} className="rounded-xl"/> */}
             <div className="flip-card1">
-            <div className="flip-card-inner1">
+            <div className="flip-card-inner1 contact_inner_card">
               <div className="flip-card-front">
                 <img
                   src={map.src}
