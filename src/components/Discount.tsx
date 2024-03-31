@@ -47,7 +47,7 @@ export default function Example() {
 
           <div className="mt-6 gap-x-10 space-y-12 lg:grid lg:grid-cols-3 lg:gap-x-6 lg:space-y-0">
             {callouts.map((callout) => (
-              <div key={callout.name} className="group relative w-96 m-auto">
+              <div key={callout.name} className="group relative w-97 m-auto">
                 <a href={"#"}>
 
                 <div className="flip-card">
@@ -63,7 +63,7 @@ export default function Example() {
                       <img
                         src={callout.imageSrc}
                         alt={callout.imageAlt}
-                        className="h-full w-full "
+                        className="h-full w-full rounded-lg"
                       />
                     </div>
                   </div>

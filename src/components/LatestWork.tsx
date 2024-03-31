@@ -23,7 +23,7 @@ const features = [
 export default function Example() {
   return (
     <div className="bg-white ">
-      <div className="mx-auto grid max-w-2xl grid-cols-1 items-center gap-x-8 gap-y-16 px-4 py-24 sm:px-6 sm:py-32 lg:max-w-7xl lg:grid-cols-2 lg:px-8">
+      <div className="mx-auto max-sm:text-center grid max-w-2xl grid-cols-1 items-center gap-x-8 gap-y-16 px-4 py-24 sm:px-6 sm:py-32 lg:max-w-7xl lg:grid-cols-2 lg:px-8">
         <div className=''>
           <h2 className="text-5xl font-bold tracking-tight text-gray-900 sm:text-5xl">
              Recent Work
@@ -46,8 +46,8 @@ export default function Example() {
             ))}
           </dl>
         </div>
-        <div className="grid grid-cols-1 grid-rows-1  ">
-          <div className="flip-card1">
+        <div className="grid grid-cols-1 grid-rows-1 place-items-center">
+          <div className="flip-card2 max-sm:justify-center">
             <div className="flip-card-inner1">
               <div className="flip-card-front">
                 <img

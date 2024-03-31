@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+
+
 .dropdown_list li a {
   /* background-color: aliceblue; */
   color: #00000080 !important;
@@ -102,11 +104,18 @@ html {
 .flip-card {
   background-color: transparent;
   width: 240px;
-  height: 350px;
+  height: 300px;
   perspective: 1000px;
   font-family: sans-serif;
 }
 .flip-card1 {
+  background-color: transparent;
+  width: 370px;
+  height: 380px;
+  perspective: 1000px;
+  font-family: sans-serif;
+}
+.flip-card2 {
   background-color: transparent;
   width: 370px;
   height: 380px;
@@ -142,6 +151,9 @@ html {
   transform: rotateY(180deg);
 }
 .flip-card1:hover .flip-card-inner1 {
+  transform: rotateY(180deg);
+}
+.flip-card2:hover .flip-card-inner1 {
   transform: rotateY(180deg);
 }
 
@@ -189,9 +201,9 @@ html {
 .width_discount {
   width: 110rem;
 }
-.inner_container_contact {
+/* .inner_container_contact {
   width: 83rem !important;
-}
+} */
 
 /* media Query from 576px to 991px .................................................*/
 
@@ -211,6 +223,13 @@ html {
 /* media Query from 576px to 992px .................................................*/
 
 @media (min-width: 576px) and (max-width: 992px) {
+  .flip-card1 {
+    background-color: transparent;
+    width: 290px;
+    height: 380px;
+    perspective: 1000px;
+    font-family: sans-serif;
+  }
   .nav-header {
     position: relative;
     float: left;
@@ -243,10 +262,10 @@ html {
 
     /* flex-direction: column; */
   }
-  .w-96{
+  .w-97 {
     width: 28rem;
   }
-  .contact_inner_card{
+  .contact_inner_card {
     left: 120px;
   }
   /* .collapsed.active {
@@ -260,10 +279,10 @@ html {
 /* media Query from 0px to 575px .................................................*/
 
 @media screen and (max-width: 575px) {
-  .flip-card-back button{
+  .flip-card-back button {
     left: 35px;
   }
-  .w-96{
+  .w-97 {
     width: 28rem;
   }
   .nav-header {
@@ -273,7 +292,7 @@ html {
     left: 15px;
   }
   .collapsed {
-    display: flex !important;
+    display: block !important;
     flex-direction: column;
     /* left: 7px; */
     position: absolute;
@@ -309,11 +328,18 @@ html {
     margin-right: 0px !important;
     margin-left: 0px !important;
   }
-  .collapsed.active {
+  /* .collapsed.active {
     display: flex !important;
-  }
-  /* .navbar-toggler-nav {
+  } */
+  .navbar-toggler-nav{
     display: block !important;
+    right: 15px;
+  }
+  .collapsed.show{
+    display: none !important;
+  }
+  /* .navbar-toggler-nav.show{
+    display: none !important;
     right: 15px;
   } */
   .inner_container_contact {
@@ -326,9 +352,16 @@ html {
     perspective: 1000px;
     font-family: sans-serif;
   }
+  .flip-card2 {
+    background-color: transparent;
+    width: 290px;
+    height: 380px;
+    perspective: 1000px;
+    font-family: sans-serif;
+  }
   .work-video {
     height: 380px;
-    width: 250px;
+    width: 290px;
   }
   .flip-card-inner1 {
     position: relative;
@@ -341,7 +374,7 @@ html {
   .flip-card {
     background-color: transparent;
     width: 280px;
-    height: 480px;
+    height: 300px;
     perspective: 1000px;
     font-family: sans-serif;
   }
@@ -405,5 +438,5 @@ html {
 /*   */
 .bg-gray-900 {
   --tw-bg-opacity: 1;
-  background-color: #00000080 !important;
+  background-color: #1f1f1f !important;
 }
