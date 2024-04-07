@@ -4,7 +4,7 @@ import slide1 from "../images/downloaded/1.jpg";
 import slide2 from "../images/downloaded/3.jpg";
 import slide3 from "../images/downloaded/8.jpg";
 
-function ControlledCarousel() {
+function Carousel() {
   const callouts = [
     {
       name: "Glass Railling",
@@ -70,4 +70,4 @@ function ControlledCarousel() {
   );
 }
 
-export default ControlledCarousel;
+export default Carousel;

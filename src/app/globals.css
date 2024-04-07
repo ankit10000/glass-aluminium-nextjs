@@ -256,12 +256,12 @@ html {
     color: white;
     margin-top: 3px;
   }
-  .collapsed {
-    display: block !important;
-    float: left !important;
+  /* .collapsed { */
+    /* display: block !important;
+    float: left !important; */
 
     /* flex-direction: column; */
-  }
+  /* } */
   .w-97 {
     width: 28rem;
   }
@@ -292,7 +292,7 @@ html {
     left: 15px;
   }
   .collapsed {
-    display: block !important;
+    display: block;
     flex-direction: column;
     /* left: 7px; */
     position: absolute;
@@ -335,8 +335,11 @@ html {
     display: block !important;
     right: 15px;
   }
-  .collapsed.show{
+  #fh5co-menu-wrap{
     display: none !important;
+  }
+  #fh5co-menu-wrap.show{
+    display: block !important;
   }
   /* .navbar-toggler-nav.show{
     display: none !important;

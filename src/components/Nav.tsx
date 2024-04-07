@@ -7,6 +7,7 @@ import "../css/style.css";
 import "../css/animate.css";
 import "../css/flexslider.css";
 import { IoMenu } from "react-icons/io5";
+import Link from "next/link"
 
 export default function Nav() {
   const [isNavOpen, setIsNavOpen] = useState(false);
@@ -21,10 +22,10 @@ export default function Nav() {
         <div className="nav-header">
          
           <h1 id="fh5co-logo">
-            <a href="index.html">
+            <Link href="/">
               <i className="icon-home"></i>
               <span>The Floor Decor</span>
-            </a>
+            </Link>
           </h1>
           <IoMenu
             color="#00d866"
@@ -43,32 +44,32 @@ export default function Nav() {
               id="fh5co-primary-menu"
             >
               <li className="active">
-                <a href="#home">Home</a>
+                <Link href="#home">Home</Link>
               </li>
               <li>
-                <a href="#category" className="fh5co-sub-ddown">
+                <Link href="#category" className="fh5co-sub-ddown">
                   Category
-                </a>
+                </Link>
                 <ul className="fh5co-sub-menu dropdown_list">
                   <li>
-                    <a href="#">Glass</a>
+                    <Link href="/glass">Glass</Link>
                   </li>
                   <li>
-                    <a href="#">Furniture</a>
+                    <Link href="/furniture">Furniture</Link>
                   </li>
                   <li>
-                    <a href="#">Aluminium</a>
+                    <Link href="/aluminium">Aluminium</Link>
                   </li>
                   <li>
-                    <a href="#">Iron</a>
+                    <Link href="/iron">Iron</Link>
                   </li>
                 </ul>
               </li>
               <li>
-                <a href="#recentwork">Recent Work</a>
+                <Link href="#recentwork">Recent Work</Link>
               </li>
               <li>
-                <a href="#contact">Contact</a>
+                <Link href="#contact">Contact</Link>
               </li>
             </ul>
           </nav>
