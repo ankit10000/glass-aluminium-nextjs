@@ -10,6 +10,7 @@ import LogoClouds from "@/components/LogoClouds";
 import Carousel from "@/components/Carousel";
 import LatestWork from "@/components/LatestWork";
 import Contact from "@/components/Contact";
+// import Video from "@/components/Video";
 
 export default function Home() {
   return (
@@ -21,6 +22,7 @@ export default function Home() {
       <Discount />
       <LatestWork />
       <Contact />
+      {/* <Video /> */}
     </div>
   );
 }

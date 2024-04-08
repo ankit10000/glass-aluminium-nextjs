@@ -3,13 +3,13 @@ const app = express();
 const routes = require('./router/routes');
 const mongoose = require('mongoose');
 const cors = require('cors');
-
+require('dotenv').config();
 app.use(express.json());
 app.use(cors());
 
 // Use the router middleware
 app.use('/', routes);
-mongoose.connect('mongodb+srv://onlineinbox07:Ankit&1234@react-app.sufzqlg.mongodb.net/')
+mongoose.connect(process.env.MONGODB)
 .then(() => {
   console.log('Connected to MongoDB');
 })

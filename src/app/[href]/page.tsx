@@ -22,7 +22,9 @@ export default function Page({ params }: { params: Params }) {
   useEffect(() => {
     async function fetchData() {
       try {
-        const response = await fetch(`http://localhost:3001/${params.href}` || `https://glass-aluminium-nextjs.vercel.app/${params.href}` );
+        const response = await fetch(
+          // `http://localhost:3001/${params.href}` || 
+          `https://glass-alu-api-3.onrender.com/${params.href}` );
         if (!response.ok) {
           throw new Error('Network response was not ok');
         }
