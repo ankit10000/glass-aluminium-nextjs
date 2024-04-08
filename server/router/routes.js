@@ -4,7 +4,8 @@ const Glass = require("../schema/glassSchema")
 const Furniture = require("../schema/furnitureSchema")
 const Alu = require("../schema/aluminiumScehma")
 const Iron = require("../schema/ironSchema")
-
+const ImageModel = require("../schema/multer.model")
+const upload = require('../multer.confg')
 //glass route
 router.post('/glass', async (req, res) => {
   try {
@@ -130,6 +131,39 @@ router.get('/iron', async (req, res) => {
     res.status(500).send('Internal Server Error');
   }
 });
+
+// const Storage = multer.diskStorage({
+//   destination: "uploads",
+//   filename: (req, file, cb) => {
+//     cb(null, file.originalname);
+//   },
+// });
+// const upload = multer({
+//   storage: Storage
+// }).single('testImage')
+
+//using multer 
+
+router.post("/upload", (req, res) => {
+  upload(req, res, (err) => {
+    if (err) {
+      consloe.log(err);
+    }
+    else {
+      const newImage = new ImageModel({
+        name: req.body.name,
+        image: {
+          data: req.body.name,
+          contentType: "image/png"
+        }
+      })
+      newImage.save()
+      .then(() => res.send("successfully upload image"))
+      .catch((err) => console.log(err))
+    }
+  })
+
+})
 
 
 module.exports = router;
