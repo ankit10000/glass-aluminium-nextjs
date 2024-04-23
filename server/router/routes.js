@@ -2,10 +2,13 @@ const express = require('express');
 const router = express.Router();
 const Glass = require("../schema/glassSchema")
 const Furniture = require("../schema/furnitureSchema")
+const Admin = require("../schema/adminSchema")
 const Alu = require("../schema/aluminiumScehma")
 const Iron = require("../schema/ironSchema")
 const ImageModel = require("../schema/multer.model")
 const upload = require('../multer.confg')
+const bcrypt = require('bcryptjs')
+
 //glass route
 router.post('/glass', async (req, res) => {
   try {
@@ -164,6 +167,73 @@ router.post("/upload", (req, res) => {
   })
 
 })
+
+//registration credential for my admin
+
+router.post("/register", async (req, res) => {
+  const { username, email, contactnumber, password, confirmPassword } =
+    req.body;
+  if (!username || !email || !contactnumber || !password || !confirmPassword) {
+    return res.status(421).json({ error: "please fill the blank input" });
+  }
+  try {
+    const userExistemail = await Admin.findOne({ email: email });
+    const userExistusername = await Admin.findOne({ username: username });
+    const userExistcontactnumber = await Admin.findOne({ contactnumber: contactnumber, });
+    const admin = new Admin({
+      username,
+      email,
+      contactnumber,
+      password,
+      confirmPassword,
+    });
+
+    if (userExistemail) {
+      return res.status(422).json({ error: "Email Alerady Exist" });
+    } else if (userExistusername) {
+      return res.status(423).send({ error: "Username Alerady Exist" });
+    } else if (userExistcontactnumber) {
+      return res.status(424).json({ error: "Contact number Alerady Exist" });
+    } else if (password != confirmPassword) {
+      return res.status(425).json({ error: "Password is not match" });
+    } else {
+      await admin.save();
+      res.status(201).json({ massege: "user registered successfully" });
+    }
+  } catch (err) {
+    console.log(err);
+  }
+});
+
+
+//login for my user admin panel 
+
+
+router.post("/login", async (req, res) => {
+  try {
+    const { username, password } = req.body;
+    if (!username || !password) {
+      return res.status(400).json({ error: "please fill the blank input1" });
+    }
+
+    const userlogin = await Admin.findOne({ username: username });
+
+    if (userlogin) {
+      const userIsmatch = await bcrypt.compare(password, userlogin.password);
+
+      if (!userIsmatch) {
+        res.status(400).json({ error: "Invalide credentials" });
+      } else {
+        res.json({ message: "user login successfully" });
+      }
+    } else {
+      res.status(400).json({ error: "Invalide credentials" });
+    }
+  } catch (err) {
+    console.log(err);
+  }
+});
+
 
 
 module.exports = router;

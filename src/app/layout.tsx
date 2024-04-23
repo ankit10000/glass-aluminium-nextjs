@@ -4,7 +4,6 @@ import "./globals.css";
 import { useEffect } from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Metadata } from "next";
-import Footer from "@/components/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -26,7 +25,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         {children}
-      <Footer />
+      
 
         </body>
     </html>

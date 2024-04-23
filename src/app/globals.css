@@ -2,7 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-
+ul li Link{
+  text-decoration: none !important;
+}
 
 .dropdown_list li a {
   /* background-color: aliceblue; */
@@ -53,9 +55,7 @@ html {
 .nav-header h1 a {
   text-decoration: none;
 }
-.nav-header h1 a span:hover {
-  color: #25a343 !important;
-}
+
 #fh5co-header-section {
   position: fixed !important;
   top: 0px;
@@ -424,6 +424,21 @@ html {
     flex-direction: column;
     flex-wrap: wrap;
   }
+  .carsol-name {
+    position: absolute;
+    color: white;
+    font-size: 2rem !important;
+    transform: translate(-50%, -50%);
+    font-weight: 700;
+    overflow: hidden;
+    white-space: nowrap;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+  }
+  .title-word {
+    font-size: 3rem !important;
+  }
 }
 
 .navbar-toggler-nav {
@@ -442,4 +457,100 @@ html {
 .bg-gray-900 {
   --tw-bg-opacity: 1;
   background-color: #1f1f1f !important;
+}
+.btn_color{
+  background-color: #00d866;
+}
+.btn_color:hover{
+  background-color: #00be59;
+}
+
+
+
+
+
+
+
+
+.slider {
+  position: relative;
+  width: 100vw;
+  margin: 0 auto;
+  transition: all;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.slider img {
+  width: 100vw;
+  height: 90vh;
+  filter: brightness(60%);
+ 
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  color: white;
+  z-index: 100;
+  padding: 90px 15px 90px 15px;
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 20px;
+}
+
+.carsol-name {
+  position: absolute;
+  color: white;
+  font-size: 3rem;
+  transform: translate(-50%, -50%);
+  font-weight: 700;
+  overflow: hidden;
+  white-space: nowrap;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+}
+
+.title-word {
+  font-size: 8rem;
+  animation: color-animation 4s linear infinite;
+}
+
+.title-word-1 {
+  --color-1: #DF8453;
+  --color-2: #3D8DAE;
+  --color-3: #E4A9A8;
+}
+
+.title-word-2 {
+  --color-1: #DBAD4A;
+  --color-2: #ACCFCB;
+  --color-3: #17d831;
+}
+
+.title-word-3 {
+  --color-1: #ACCFCB;
+  --color-2: #E4A9A8;
+  --color-3: #ACCFCB;
+}
+
+
+@keyframes color-animation {
+  0%    {color: var(--color-1)}
+  32%   {color: var(--color-1)}
+  33%   {color: var(--color-2)}
+  65%   {color: var(--color-2)}
+  66%   {color: var(--color-3)}
+  99%   {color: var(--color-3)}
+  100%  {color: var(--color-1)}
 }

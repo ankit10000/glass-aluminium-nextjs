@@ -1,4 +1,3 @@
-"use client";
 import React, { useState } from "react";
 import "../css/bootstrap.css";
 import "../css/icomoon.css";
@@ -50,7 +49,7 @@ export default function Nav() {
                 <Link href="#category" className="fh5co-sub-ddown">
                   Category
                 </Link>
-                <ul className="fh5co-sub-menu dropdown_list">
+                {/* <ul className="fh5co-sub-menu dropdown_list">
                   <li>
                     <Link href="/glass">Glass</Link>
                   </li>
@@ -63,7 +62,7 @@ export default function Nav() {
                   <li>
                     <Link href="/iron">Iron</Link>
                   </li>
-                </ul>
+                </ul> */}
               </li>
               <li>
                 <Link href="#recentwork">Recent Work</Link>
@@ -71,6 +70,9 @@ export default function Nav() {
               <li>
                 <Link href="#contact">Contact</Link>
               </li>
+              {/* <li>
+                <Link href="/admin">Admin</Link>
+              </li> */}
             </ul>
           </nav>
         </div>

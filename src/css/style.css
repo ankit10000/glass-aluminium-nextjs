@@ -31,7 +31,7 @@
       top: 0;
       left: 0;
       font-size: 16px;
-      color: #44C662;
+      color:#3D8DAE;
       background: rgba(0, 0, 0, 0.06);
       padding: 10px;
       -webkit-border-radius: 50%;
@@ -39,9 +39,11 @@
       -ms-border-radius: 50%;
       border-radius: 50%; }
     #fh5co-logo a {
-      color: #44C662; }
+      color:#4db7e4;
+      font-weight: bolder; 
+    }
     #fh5co-logo a:hover, #fh5co-logo a:focus {
-      color: #44C662 !important; }
+      color:#3D8DAE !important; }
     #fh5co-logo span {
       font-weight: 300; }
 
@@ -109,16 +111,16 @@
   text-transform: none;
   background: none; }
 #fh5co-primary-menu .fh5co-sub-menu a:hover {
-  color: #44C662 !important; }
+  color:#3D8DAE !important; }
   #offcanvas-menu ul li > .fh5co-sub-menu {
     margin-top: 9px;
     padding-left: 20px; }
   #offcanvas-menu ul li.active > a {
-    color: #44C662; }
+    color:#3D8DAE; }
   #offcanvas-menu ul .fh5co-sub-menu {
     display: block !important; }
     #fh5co-primary-menu > li > ul li.active > a {
-  color: #44C662 !important; }
+  color:#3D8DAE !important; }
 #fh5co-primary-menu > li > .sf-with-ul:after {
   border: none !important;
   font-family: 'icomoon';
@@ -180,13 +182,13 @@ body.fh5co-offcanvas {
   overflow: hidden; }
 
 a {
-  color: #44C662;
+  color:#3D8DAE;
   -webkit-transition: 0.5s, ease;
   -o-transition: 0.5s, ease;
   transition: 0.5s, ease; }
 a:hover {
   text-decoration: none;
-  color: #44C662; }
+  color:#3D8DAE; }
 
 p, ul, ol {
   margin-bottom: 1.5em;
@@ -205,15 +207,15 @@ figure {
 
 ::-webkit-selection {
   color: #fcfcfc;
-  background: #44C662; }
+  background:#3D8DAE; }
 
 ::-moz-selection {
   color: #fcfcfc;
-  background: #44C662; }
+  background:#3D8DAE; }
 
 ::selection {
   color: #fcfcfc;
-  background: #44C662; }
+  background:#3D8DAE; }
 
 #fh5co-header {
   position: relative;
@@ -231,7 +233,7 @@ figure {
 
 .header-top {
   padding: 10px 0;
-  background: #44C662; }
+  background:#3D8DAE; }
 .header-top .fh5co-link a {
   margin-left: 10px;
   font-size: 13px;
@@ -341,11 +343,11 @@ figure {
   padding: 5px 12px;
   display: inline-block;
   margin-bottom: 20px;
-  background: #44C662;
+  background:#3D8DAE;
   color: #fff;
   font-weight: 400; }
 #fh5co-hero .flexslider .slider-text > .slider-text-inner .price {
-  color: #44C662; }
+  color:#3D8DAE; }
 #fh5co-hero .flexslider .slider-text > .slider-text-inner p {
   font-size: 18px;
   color: rgba(255, 255, 255, 0.9); }
@@ -357,7 +359,7 @@ figure {
   border: none !important;
   font-size: 18px; }
 #fh5co-hero .flexslider .slider-text > .slider-text-inner .btn:hover {
-  background: #44C662 !important;
+  background:#3D8DAE !important;
   -webkit-box-shadow: 0px 14px 30px -15px rgba(0, 0, 0, 0.75) !important;
   -moz-box-shadow: 0px 14px 30px -15px rgba(0, 0, 0, 0.75) !important;
   box-shadow: 0px 14px 30px -15px rgba(0, 0, 0, 0.75) !important; }
@@ -386,6 +388,345 @@ figure {
   font-weight: 700; }
 #fh5co-hero .flexslider .slider-text > .slider-text-inner .desc .details span {
   display: block; }
+  /* Fixing CSS errors */
+  /* Problem 1: */
+  /* width: 12em; } */
+  /* Fix: */
+  width: 12em;
+  /* Problem 2: */
+  /* *padding-right: 1em; } */
+  /* Fix: */
+  padding-right: 1em;
+  /* Problem 3: */
+  /* speak: none; */
+  /* Fix: */
+  /* Problem 4: */
+  /* speak: none; */
+  /* Fix: */
+  /* Problem 5: */
+  /* left: 0; */
+  /* Fix: */
+  inset-inline-start: 0;
+  /* Problem 6: */
+  /* width: 100%; */
+  /* Fix: */
+  inline-size: 100%;
+  /* Problem 7: */
+  /* height: 55px; */
+  /* Fix: */
+  block-size: 55px;
+  /* Problem 8: */
+  /* float: left; */
+  /* Fix: */
+  float: inline-start;
+  /* Problem 9: */
+  /* width: 100%; } */
+  /* Fix: */
+  inline-size: 100%;
+  /* Problem 10: */
+  /* margin-top: 10px; */
+  /* Fix: */
+  margin-block-start: 10px;
+  /* Problem 11: */
+  /* float: left; */
+  /* Fix: */
+  float: inline-start;
+  /* Problem 12: */
+  /* padding-left: 40px; } */
+  /* Fix: */
+  padding-inline-start: 40px;
+  /* Problem 13: */
+  /* top: 0; */
+  /* Fix: */
+  inset-block-start: 0;
+  /* Problem 14: */
+  /* left: 0; */
+  /* Fix: */
+  inset-inline-start: 0;
+  /* Problem 15: */
+  /* left: 0; */
+  /* Fix: */
+  inset-inline-start: 0;
+  /* Problem 16: */
+  /* left: 100%; } */
+  /* Fix: */
+  inset-inline-start: 100%;
+  /* Problem 17: */
+  /* top: -9px; */
+  /* Fix: */
+  inset-block-start: -9px;
+  /* Problem 18: */
+  /* left: 20px; */
+  /* Fix: */
+  inset-inline-start: 20px;
+  /* Problem 19: */
+  /* width: 0; */
+  /* Fix: */
+  inline-size: 0;
+  /* Problem 20: */
+  /* height: 0; */
+  /* Fix: */
+  block-size: 0;
+  /* Problem 21: */
+  /* top: -8px; */
+  /* Fix: */
+  inset-block-start: -8px;
+  /* Problem 22: */
+  /* left: 21px; */
+  /* Fix: */
+  inset-inline-start: 21px;
+  /* Problem 23: */
+  /* width: 0; */
+  /* Fix: */
+  inline-size: 0;
+  /* Problem 24: */
+  /* height: 0; */
+  /* Fix: */
+  block-size: 0;
+  /* Problem 25: */
+  /* border-right: 8px solid transparent; */
+  /* Fix: */
+  border-inline-end: 8px solid transparent;
+  /* Problem 26: */
+  /* border-bottom: 8px solid #fff; */
+  /* Fix: */
+  border-block-end: 8px solid #fff;
+  /* Problem 27: */
+  /* border-bottom: 8px solid white; */
+  /* Fix: */
+  border-block-end: 8px solid white;
+  /* Problem 28: */
+  /* border-left: 8px solid transparent; */
+  /* Fix: */
+  border-inline-start: 8px solid transparent;
+  /* Problem 29: */
+  /* top: 6px; */
+  /* Fix: */
+  inset-block-start: 6px;
+  /* Problem 30: */
+  /* left: 100%; } */
+  /* Fix: */
+  inset-inline-start: 100%;
+  /* Problem 31: */
+  /* top: 7px; */
+  /* Fix: */
+  inset-block-start: 7px;
+  /* Problem 32: */
+  /* right: 100%; */
+  /* Fix: */
+  inset-inline-end: 100%;
+  /* Problem 33: */
+  /* margin-top: 9px; */
+  /* Fix: */
+  margin-block-start: 9px;
+  /* Problem 34: */
+  /* padding-left: 20px; } */
+  /* Fix: */
+  padding-inline-start: 20px;
+  /* Problem 35: */
+  /* float: right; */
+  /* Fix: */
+  float: inline-end;
+  /* Problem 36: */
+  /* margin-right: -0px; */
+  /* Fix: */
+  margin-inline-end: -0px;
+  /* Problem 37: */
+  /* top: 50%; */
+  /* Fix: */
+  inset-block-start: 50%;
+  /* Problem 38: */
+  /* margin-top: -7px; */
+  /* Fix: */
+  margin-block-start: -7px;
+  /* Problem 39: */
+  /* float: right; */
+  /* Fix: */
+  float: inline-end;
+  /* Problem 40: */
+  /* margin-right: 10px; */
+  /* Fix: */
+  margin-inline-end: 10px;
+  /* Problem 41: */
+  /* top: 20px; */
+  /* Fix: */
+  inset-block-start: 20px;
+  /* Problem 42: */
+  /* margin-bottom: 1.5em; */
+  /* Fix: */
+  margin-block-end: 1.5em;
+  /* Problem 43: */
+  /* margin-bottom: 2em; } */
+  /* Fix: */
+  margin-block-end: 2em;
+  /* Problem 44: */
+  /* margin-bottom: 0; */
+  /* Fix: */
+  margin-block-end: 0;
+  /* Problem 45: */
+  /* top: 0 !important; */
+  /* Fix: */
+  inset-block-start: 0 !important;
+  /* Problem 46: */
+  /* margin-left: 10px; */
+  /* Fix: */
+  margin-inline-start: 10px;
+  /* Problem 47: */
+  /* margin-left: 0; } */
+  /* Fix: */
+  margin-inline-start: 0;
+  /* Problem 48: */
+  /* @media screen and (max-width: 768px) { */
+  /* Fix: */
+  max-inline-size: 768px;
+  /* Problem 49: */
+  /* margin-right: 15px; */
+  /* Fix: */
+  margin-inline-end: 15px;
+  /* Problem 50: */
+  /* margin-right: 0; } */
+  /* Fix: */
+  margin-inline-end: 0;
+  /* Problem 51: */
+  /* @media screen and (max-width: 768px) { */
+  /* Fix: */
+  max-inline-size: 768px;
+  /* Problem 52: */
+  /* min-height: 700px; */
+  /* Fix: */
+  min-block-size: 700px;
+  /* Problem 53: */
+  /* top: 0; */
+  /* Fix: */
+  inset-block-start: 0;
+  /* Problem 54: */
+  /* bottom: 0; */
+  /* Fix: */
+  inset-block-end: 0;
+  /* Problem 55: */
+  /* left: 0; */
+  /* Fix: */
+  inset-inline-start: 0;
+  /* Problem 56: */
+  /* right: 0; */
+  /* Fix: */
+  inset-inline-end: 0;
+  /* Problem 57: */
+  /* margin-bottom: 0; } */
+  /* Fix: */
+  margin-block-end: 0;
+  /* Problem 58: */
+  /* min-height: 700px; */
+  /* Fix: */
+  min-block-size: 700px;
+  /* Problem 59: */
+  /* bottom: 40px; */
+  /* Fix: */
+  inset-block-end: 40px;
+  /* Problem 60: */
+  /* @media screen and (max-width: 768px) { */
+  /* Fix: */
+  max-inline-size: 768px;
+  /* Problem 61: */
+  /* bottom: 10px; } } */
+  /* Fix: */
+  inset-block-end: 10px;
+  /* Problem 62: */
+  /* width: 12px; */
+  /* Fix: */
+  inline-size: 12px;
+  /* Problem 63: */
+  /* height: 12px; */
+  /* Fix: */
+  block-size: 12px;
+  /* Problem 64: */
+  /* min-height: 400px; */
+  /* Fix: */
+  min-block-size: 400px;
+  /* Problem 65: */
+  /* min-height: 700px; } */
+  /* Fix: */
+  min-block-size: 700px;
+  /* Problem 66: */
+  /* margin-bottom: 20px; */
+  /* Fix: */
+  margin-block-end: 20px;
+  /* Problem 67: */
+  /* @media screen and (max-width: 768px) { */
+  /* Fix: */
+  max-inline-size: 768px;
+  /* Problem 68: */
+  /* margin-bottom: 30px; */
+  /* Fix: */
+  margin-block-end: 30px;
+  /* Problem 69: */
+  /* margin-bottom: 20px; */
+  /* Fix: */
+  margin-block-end: 20px;
+  /* Problem 70: */
+  /* width: 100% !important; */
+  /* Fix: */
+  inline-size: 100% !important;
+  /* Problem 71: */
+  /* margin-bottom: 10px; } */
+  /* Fix: */
+  margin-block-end: 10px;
+  /* Problem 72: */
+  /* width: 100%; */
+  /* Fix: */
+  inline-size: 100%;
+  /* Problem 73: */
+  /* width: 100%; */
+  /* Fix: */
+  inline-size: 100%;
+  /* Problem 74: */
+  /* margin-left: 1em; } */
+  /* Fix: */
+  margin-inline-start: 1em;
+  /* Problem 75: */
+  /* @media screen and (max-width: 768px) { */
+  /* Fix: */
+  max-inline-size: 768px;
+  /* Problem 76: */
+  /* margin-left: 0; } } */
+  /* Fix: */
+  margin-inline-start: 0;
+  /* Problem 77: */
+  /* float: right; } */
+  /* Fix: */
+  float: inline-end;
+  /* Problem 78: */
+  /* min-width: 12em; */
+  /* Fix: */
+  min-inline-size: 12em;
+  /* Problem 79: */
+  /* *width: 12em; } */
+  /* Fix: */
+  inline-size: 12em;
+  /* Problem 80: */
+  /* border-left: none; */
+  /* Fix: */
+  border-inline-start: none;
+  /* Problem 81: */
+  /* border-top: none; */
+  /* Fix: */
+  border-block-start: none;
+  /* Problem 82: */
+  /* border-top: none; */
+  /* Fix: */
+  border-block-start: none;
+  /* Problem 83: */
+  /* border-bottom: none !important; */
+  /* Fix: */
+  border-block-end: none !important;
+  /* Problem 84: */
+  /* padding-right: 2.5em; */
+  /* Fix: */
+  padding-inline-end: 2.5em;
+  /* Problem 85: */
+  /* *padding-right: 1em; } */
+  /* Fix: */
+  padding-inline-end: 1em;
 #fh5co-hero .flexslider .slider-text > .slider-text-inner .heading-title {
   font-size: 60px; }
 
@@ -415,10 +756,10 @@ figure {
   border-bottom: none !important;
   font-weight: bold; }
 .sf-menu a:hover, .sf-menu a:focus {
-  color: #44C662 !important; }
+  color:#3D8DAE !important; }
 
 .sf-menu li.active a:hover, .sf-menu li.active a:focus {
-  color: #44C662; }
+  color:#3D8DAE; }
 
 .sf-menu li, .sf-menu ul li, .sf-menu ul ul li, .sf-menu li:hover, .sf-menu li.sfHover {
   background: transparent; }
@@ -430,7 +771,7 @@ figure {
   font-size: 14px !important; }
 
 .sf-menu li:hover a, .sf-menu li.sfHover a, .sf-menu ul li:hover a, .sf-menu ul li.sfHover a, .sf-menu li.active a {
-  color: #44C662; }
+  color:#3D8DAE; }
 
 .sf-menu ul li:hover, .sf-menu ul li.sfHover {
   background: transparent; }
