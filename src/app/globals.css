@@ -194,17 +194,10 @@ html {
   color: white;
   transform: rotateY(180deg);
 }
-.dis_work_h1 {
-  /* position: absolute;
-  top: 480px;
-  left: 90px; */
-}
 .width_discount {
   width: 110rem;
 }
-/* .inner_container_contact {
-  width: 83rem !important;
-} */
+
 
 /* media Query from 576px to 991px .................................................*/
 
@@ -238,8 +231,8 @@ html {
     left: 15px;
   }
   .collapsed {
+    
     display: flex !important;
-    flex-direction: column;
     /* left: 7px; */
     position: absolute;
     top: 40px;
@@ -257,24 +250,14 @@ html {
     color: white;
     margin-top: 3px;
   }
-  /* .collapsed { */
-    /* display: block !important;
-    float: left !important; */
-
-    /* flex-direction: column; */
-  /* } */
   .w-97 {
     width: 28rem;
   }
   .contact_inner_card {
     left: 120px;
   }
-  /* .collapsed.active {
-    display: flex !important;
-  } */
-  /* .navbar-toggler-nav {
-    display: block !important;
-  } */
+ 
+  
 }
 
 /* media Query from 0px to 575px .................................................*/
@@ -296,9 +279,23 @@ html {
     display: block;
     flex-direction: column;
     /* left: 7px; */
+    background-color: #00be59;
+    
     position: absolute;
     top: 40px;
     left: 26px;
+  }
+  .sf-menu{
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    position: absolute;
+    z-index: 2;
+    float: left !important;
+    right: 10px;
+    top: 47px;
+    text-align: center;
+    width: 265px;
   }
   .headbar .container {
     display: flex;
@@ -342,6 +339,7 @@ html {
   #fh5co-menu-wrap.show{
     display: block !important;
   }
+  
   /* .navbar-toggler-nav.show{
     display: none !important;
     right: 15px;
@@ -388,7 +386,7 @@ html {
   #fh5co-header-section {
     position: static !important;
     top: 0px;
-    height: 250px !important;
+   /*  height: 250px !important; */
   }
   .dropdown_list {
     left: 8px;
