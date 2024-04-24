@@ -11,7 +11,7 @@ const callouts = [
     imageSrc: slide1.src,
     imageAlt:
       "Desk with leather desk pad, walnut desk organizer, wireless keyboard and mouse, and porcelain mug.",
-    href: "#",
+    href: "#glass",
   },
   {
     id: 2,
@@ -20,7 +20,7 @@ const callouts = [
     imageSrc: slide2.src,
     imageAlt:
       "Wood table with porcelain mug, leather journal, brass pen, leather key ring, and a houseplant.",
-    href: "#",
+    href: "#furniture",
   },
   {
     id: 3,
@@ -28,7 +28,7 @@ const callouts = [
     description: "Daily commute essentials",
     imageSrc: slide3.src,
     imageAlt: "Collection of four insulated travel bottles on wooden shelf.",
-    href: "#",
+    href: "#aluminium",
   },
   {
     id: 4,
@@ -36,7 +36,7 @@ const callouts = [
     description: "Daily commute essentials",
     imageSrc: slide3.src,
     imageAlt: "Collection of four insulated travel bottles on wooden shelf.",
-    href: "#",
+    href: "#iron",
   },
 ];
 
@@ -56,6 +56,7 @@ export default function Category() {
                 className="group relative w-97 m-auto"
               >
                 <div className="">
+                  <Link href={callout.href}>
                   <div className="flip-card">
                     <img
                       src={callout.imageSrc}
@@ -66,6 +67,7 @@ export default function Category() {
                   <h2 className="mt-6 dis_work_h1 text-center text-gray-900">
                     {callout.name}
                   </h2>
+                  </Link>
                 </div>
               </div>
             ))}

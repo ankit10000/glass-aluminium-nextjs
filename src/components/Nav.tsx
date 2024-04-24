@@ -49,20 +49,20 @@ export default function Nav() {
                 <Link href="#category" className="fh5co-sub-ddown">
                   Category
                 </Link>
-                {/* <ul className="fh5co-sub-menu dropdown_list">
+                <ul className="fh5co-sub-menu dropdown_list">
                   <li>
-                    <Link href="/glass">Glass</Link>
+                    <Link href="#glass">Glass</Link>
                   </li>
                   <li>
-                    <Link href="/furniture">Furniture</Link>
+                    <Link href="#furniture">Furniture</Link>
                   </li>
                   <li>
-                    <Link href="/aluminium">Aluminium</Link>
+                    <Link href="#aluminium">Aluminium</Link>
                   </li>
                   <li>
-                    <Link href="/iron">Iron</Link>
+                    <Link href="#iron">Iron</Link>
                   </li>
-                </ul> */}
+                </ul>
               </li>
               <li>
                 <Link href="#recentwork">Recent Work</Link>

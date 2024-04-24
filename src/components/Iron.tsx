@@ -6,6 +6,7 @@ import slide3 from "../images/downloaded/16-v.jpg";
 function Iron() {
   return (
     <div className="bg-white">
+        <div id="iron"></div>
       <div className="container m-auto max-w-8xl px-4 sm:px-6 lg:px-8">
         <div className=" m-auto py-16  lg:max-w-none lg:pb-32 ">
             <h1 className="text-center text-6xl mt-3">Iron</h1>
