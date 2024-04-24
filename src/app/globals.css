@@ -4,11 +4,12 @@
 
 ul li Link{
   text-decoration: none !important;
+  color: #000000 !important;
 }
 
-.dropdown_list li a {
+ul li a{
   /* background-color: aliceblue; */
-  color: #00000080 !important;
+  color: #000000 !important;
 }
 .dropdown_list {
   background-color: #f9f9f9;

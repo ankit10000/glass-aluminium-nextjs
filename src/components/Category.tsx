@@ -45,7 +45,7 @@ export default function Category() {
     <div className="bg-gray-100">
       <div className="m-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className=" m-auto py-16  lg:max-w-none lg:pb-32 ">
-          <h2 className="text-5xl font-bold text-gray-900 text-center">
+          <h2 className="text-5xl font-bold text-black text-center">
             Trending Categories
           </h2>
 
@@ -64,7 +64,7 @@ export default function Category() {
                       className="h-full w-full rounded-lg"
                     />
                   </div>
-                  <h2 className="mt-6 dis_work_h1 text-center text-gray-900">
+                  <h2 className="mt-6 dis_work_h1 text-center text-black">
                     {callout.name}
                   </h2>
                   </Link>

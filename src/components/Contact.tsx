@@ -21,7 +21,7 @@ export default function Contact() {
                 <label htmlFor="mail" className="text-2xl">
                   E-mail
                 </label>
-                <input type="text" className="form-control" id="pwd" />
+                <input type="text" className="form-control" id="mail" />
               </div>
               <div className="form-group">
                 <label htmlFor="comment" className="text-2xl">
