@@ -27,7 +27,7 @@ export default function Nav() {
             </Link>
           </h1>
           <IoMenu
-            color="#00d866"
+            color="#3D8DAE"
             id="navbarToggler"
             size={30}
             className="navbar-toggler-nav"
@@ -70,9 +70,6 @@ export default function Nav() {
               <li>
                 <Link href="#contact">Contact</Link>
               </li>
-              {/* <li>
-                <Link href="/admin">Admin</Link>
-              </li> */}
             </ul>
           </nav>
         </div>
