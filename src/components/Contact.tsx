@@ -1,8 +1,6 @@
 /* eslint-disable jsx-a11y/alt-text */
 /* eslint-disable @next/next/no-img-element */
-import map from "../images/map.png";
-import slide1 from "../images/downloaded/7.jpg";
-import slide2 from "../images/downloaded/8.jpg";
+import map from "../images/map.webp";
 export default function Contact() {
   return (
     <>

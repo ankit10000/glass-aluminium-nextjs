@@ -1,8 +1,8 @@
 /* eslint-disable @next/next/no-img-element */
 // import Video from 'next-video';
 // import Videoplay from '../videos/Work.mp4';
-import slide1 from '../images/downloaded/7.jpg'
-import slide2 from '../images/downloaded/8.jpg'
+import slide1 from '../images/downloaded/7.webp'
+import slide2 from '../images/downloaded/8.webp'
 const features = [
   { name: "Origin", description: "Designed by Good Goods, Inc." },
   {

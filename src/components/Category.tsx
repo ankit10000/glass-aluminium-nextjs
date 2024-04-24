@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
-import slide1 from "../images/downloaded/4v.jpg";
-import slide2 from "../images/downloaded/2v.jpg";
-import slide3 from "../images/downloaded/16-v.jpg";
+import slide1 from "../images/downloaded/4v.webp";
+import slide2 from "../images/downloaded/2v.webp";
+import slide3 from "../images/downloaded/16-v.webp";
 import Link from "next/link";
 const callouts = [
   {

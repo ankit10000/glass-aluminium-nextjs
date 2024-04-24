@@ -1,5 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
-// import slide1 from "../images/downloaded/1.jpg";
+// import slide1 from "../images/downloaded/1.webp";
 import { LuPhoneCall } from "react-icons/lu";
 import { MdEmail } from "react-icons/md";
 import { FaRegClock } from "react-icons/fa";

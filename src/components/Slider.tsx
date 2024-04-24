@@ -1,8 +1,8 @@
 /* eslint-disable @next/next/no-img-element */
 import React, { useState, useEffect } from "react";
 import slide1 from "../images/downloaded/1.webp";
-import slide3 from "../images/downloaded/3.jpg";
-import slide9 from "../images/downloaded/9.jpg";
+import slide3 from "../images/downloaded/3.webp";
+import slide9 from "../images/downloaded/9.webp";
 
 const Slider: React.FC = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
