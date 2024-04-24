@@ -1,4 +1,4 @@
-"use client";
+"use client"
 import { Inter } from "next/font/google";
 import "./globals.css";
 import { useEffect } from "react";
@@ -8,7 +8,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 const metadata: Metadata = {
   title: "The Floor Decor",
-  description: "We are working of glass, furniture and aluminium",
+  description: "We are working on glass, furniture, and aluminium",
 };
 
 export default function RootLayout({
@@ -25,11 +25,12 @@ export default function RootLayout({
       <head>
         <title>The Floor Decor</title>
         <meta charSet="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content={metadata.description || ''} />
       </head>
       <body className={inter.className}>
         {children}
-        </body>
+      </body>
     </html>
   );
 }
