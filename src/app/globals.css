@@ -554,3 +554,43 @@ html {
   99%   {color: var(--color-3)}
   100%  {color: var(--color-1)}
 }
+.image{
+  height: 600px;
+  width: 350px;
+}
+.outerbox{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 50px;
+  flex-wrap: wrap;
+}
+
+  .box1 img {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.525);
+    height: 350px;
+    width: 610px;
+    margin-top: 30px;
+    border-radius: 10px;
+  }
+  .box2 img {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.525);
+    height: 350px;
+    width: 450px;
+    margin-top: 30px;
+    border-radius: 10px;
+  }
+  .box3 img {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.525);
+    height: 350px;
+    width: 450px;
+    margin-top: 30px;
+    border-radius: 10px;
+  }
+  .box4 img {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.525);
+    height: 350px;
+    width: 610px;
+    margin-top: 30px;
+    border-radius: 10px;
+  }
+ 
