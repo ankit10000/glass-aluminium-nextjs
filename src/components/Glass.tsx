@@ -1,8 +1,9 @@
 /* eslint-disable @next/next/no-img-element */
 import React from "react";
-import slide1 from "../images/downloaded/4v.webp";
-import slide2 from "../images/downloaded/2v.webp";
-import slide3 from "../images/downloaded/16-v.webp";
+import slide1 from "../images/downloaded/21.webp";
+import slide2 from "../images/downloaded/22.webp";
+import slide3 from "../images/downloaded/5s.webp";
+import slide4 from "../images/downloaded/20.webp";
 function Glass() {
   return (
     <div className="bg-white">
@@ -21,7 +22,7 @@ function Glass() {
                 <img src={slide3.src} alt="loading" />
             </div>
             <div className="box box4">
-                <img src={slide3.src} alt="loading" />
+                <img src={slide4.src} alt="loading" />
             </div>
             </div>
         </div>

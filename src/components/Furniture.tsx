@@ -1,8 +1,10 @@
 /* eslint-disable @next/next/no-img-element */
 import React from "react";
-import slide1 from "../images/downloaded/4v.webp";
+import slide1 from "../images/downloaded/15-k.webp";
 import slide2 from "../images/downloaded/2v.webp";
-import slide3 from "../images/downloaded/16-v.webp";
+import slide3 from "../images/downloaded/25.webp";
+import slide4 from "../images/downloaded/24.webp";
+
 function Furniture() {
   return (
     <div className="bg-white">
@@ -21,7 +23,7 @@ function Furniture() {
                 <img src={slide3.src} alt="loading" />
             </div>
             <div className="box box4">
-                <img src={slide3.src} alt="loading" />
+                <img src={slide4.src} alt="loading" />
             </div>
             </div>
         </div>
