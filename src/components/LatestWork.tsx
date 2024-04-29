@@ -51,14 +51,14 @@ export default function LatestWorks() {
             <div className="flip-card-inner1">
               <div className="flip-card-front">
                 <img
-                  src={slide1.src}
+                  src="https://lh3.googleusercontent.com/pw/AP1GczNTaRyu2SsdBq3k7_CRMo9Qun8WhEkNTmB_foa_ExGyJGuiozLgaiXbSgxauxwT3UDE9tJKrtMHNYuNn5AOvdkkGlLAuHsdpT-1H8YxsRqylDNhOk2dvnWozrl30GJ4LrakNg4D4EB-txfLyYiwpphk=w927-h618-s-no-gm?authuser=0"
                   alt="Walnut card tray with white powder coated steel divider and 3 punchout holes."
                   className="rounded-lg bg-gray-100 work-video"
                 />
               </div>
               <div className="flip-card-back">
                 <img
-                  src={slide2.src}
+                  src="https://lh3.googleusercontent.com/pw/AP1GczNUFgd7dQisyFR2qiuVLrT_nxYU2m93aXsyM6cYB-EPyDvMokswegqQ1U4_8LNb8h1TRcKMkdkhtN9f8uXFrttopAY6XR67OfGj5w8efH7g7rXfdgi-_uROozP3OaDRXdkA5gGhuDOGmjw0ICXuRFjg7N_gINpSehY5TTJhFEDS0KFNKdK9Xg9kTPRj-DX8d6US7kru8pANn_cpy1LYUWhvCAHaXQDQGKxbbG1mZmLVToXBZD57_VkCVmS3mKRMQZWkk8FC0Y8fV_Fa-IYxGvGjhDgmIiHb8Nosw-qxJzCHGz_hIXakamRmayz5rBZfDQpcywjWLxyzBVLQwSJyuxvh2lkjxvhxwEy79JS-enm3bWvppEBVXXucSZNO4PT_1Tsr4Xw82hbZUOfdcflJkMXvzcfu8s3faYYah4W6GGlaio9SxDCiZfXRgroYnCpIhC0Udy_Fy9O5QaOYSgzHoSLbU4zZKZOxSszwmPilc91XhmMKngEvroFMi1VLXVDxvSygZCLg6SyJ0O7OytJiRsRbiICRpCY2qKSwTZVztwDZdT0cl3Wxo5zJ_h36vsTWJejUxbKH30HWxFkLBnlZAyxerzthrldU9l4DqRXor7YmTztfFh1spCkZDCSwds371doU0qamWXGVIhZFu2SOe5W_RgoZ2SREcc1lYULhC1NYLT1ujyv7pwQHCFSof2w5cQgHqQ5EawkSz9ZHgf0hjt1Sup9gcQUBsiCQBeUIDG86RRCkD8EHtZ8GDaFdf_iuC21PmpNJ1Y5t_ieV3HFwRUIUlmASGLwwJyjdaWkAEuQETIexecel8PLKWKv8OxsFhcohroSLZpTFThoK9bAoBpRgjG1bKQIP7ZRMrB9prKT6XnlXa0FV538Mo2Jfct1oyeov3LncejztDrHlIEf_aO3POwe7wXIs0wr0brrEsUVFHRrFZKl1z2nw8Ni6HLaVuBbUG8HIO692RwBluiIKxPYXsYD860jJGIvKhLet2qqLGGyTKrjWQYlif-msujRHnZWZe5nZhuKiVjrCZyID3AGqTy_ryO3IkoB4uw=w927-h618-s-no-gm?authuser=0"
                   alt="Walnut card tray with white powder coated steel divider and 3 punchout holes."
                   className="rounded-lg bg-gray-100 work-video"
                 />
