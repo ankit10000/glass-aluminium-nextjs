@@ -1,72 +1,68 @@
 /* eslint-disable @next/next/no-img-element */
-// import Video from 'next-video';
-// import Videoplay from '../videos/Work.mp4';
-import slide1 from '../images/downloaded/7.webp'
-import slide2 from '../images/downloaded/8.webp'
-const features = [
-  { name: "Custom Design", description: "Tailored solutions for your specific space and style requirements" },
+import React from 'react';
+
+const projects = [
   {
-    name: "Quality Materials",
-    description:
-      "Premium wood, glass, aluminum, and iron materials sourced from trusted suppliers",
+    title: 'Modern Glass Partition',
+    category: 'Glass Work',
+    image: '/images/1.webp',
   },
-  { name: "Expert Craftsmanship", description: "Skilled artisans with years of experience in furniture and interior work" },
-  { name: "Onsite Installation", description: "Professional installation team ensuring perfect fit and finish" },
-  { name: "Warranty", description: "Comprehensive warranty on all our manufactured products" },
   {
-    name: "Timely Delivery",
-    description:
-      "Efficient project management ensuring on-time completion of your projects",
+    title: 'Minimalist Aluminum Window',
+    category: 'Aluminum',
+    image: '/images/10s.webp',
+  },
+  {
+    title: 'Custom Iron Railing',
+    category: 'Iron Work',
+    image: '/images/11-k.webp',
+  },
+  {
+    title: 'Elegant Oak Table',
+    category: 'Furniture',
+    image: '/images/13-k-s.webp',
+  },
+  {
+    title: 'Sleek Storefront System',
+    category: 'Commercial',
+    image: '/images/14-k-s.webp',
+  },
+  {
+    title: 'Ornate Wrought Iron Gate',
+    category: 'Iron Work',
+    image: '/images/15-k.webp',
   },
 ];
 
-export default function LatestWorks() {
+const LatestWork = () => {
   return (
-    <div className="bg-white ">
-      <div className="mx-auto max-sm:text-center grid max-w-2xl grid-cols-1 items-center gap-x-8 gap-y-16 px-4 py-24 sm:px-6 sm:py-32 lg:max-w-7xl lg:grid-cols-2 lg:px-8">
-        <div className=''>
-          <h2 className="text-5xl font-bold tracking-tight bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text text-transparent sm:text-5xl">
-             Why Choose Us
-          </h2>
-          <p className="mt-6 text-gray-600 text-lg leading-relaxed">
-            With over 15 years of experience in furniture manufacturing and interior design,
-            we bring expertise, quality, and reliability to every project. Our commitment to
-            excellence has made us a trusted partner for homes and businesses alike.
+    <div className="bg-white py-24 sm:py-32">
+      <div className="mx-auto max-w-7xl px-6 lg:px-8">
+        <div className="max-w-2xl mx-auto text-center">
+          <h2 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">Our Latest Work</h2>
+          <p className="mt-6 text-lg leading-8 text-gray-600">
+            Discover a selection of our finest projects, showcasing our commitment to quality craftsmanship and innovative design.
           </p>
-
-          <dl className="mt-16 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 sm:gap-y-16 lg:gap-x-8">
-            {features.map((feature) => (
-              <div key={feature.name} className="border-t border-gray-200 pt-4">
-                <dt className="font-medium text-gray-900">{feature.name}</dt>
-                <dd className="mt-2 text-sm text-gray-500">
-                  {feature.description}
-                </dd>
-              </div>
-            ))}
-          </dl>
         </div>
-        <div className="grid grid-cols-1 grid-rows-1 place-items-center">
-          <div className="flip-card2 max-sm:justify-center">
-            <div className="flip-card-inner1">
-              <div className="flip-card-front">
-                <img
-                  src="/images/7.webp"
-                  alt="Walnut card tray with white powder coated steel divider and 3 punchout holes."
-                  className="rounded-lg bg-gray-100 work-video"
-                />
-              </div>
-              <div className="flip-card-back">
-                <img
-                  src="/images/8.webp"
-                  alt="Walnut card tray with white powder coated steel divider and 3 punchout holes."
-                  className="rounded-lg bg-gray-100 work-video"
-                />
+        <div className="mt-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          {projects.map((project, index) => (
+            <div key={index} className="group relative overflow-hidden rounded-lg shadow-lg">
+              <img
+                src={project.image}
+                alt={project.title}
+                className="w-full h-80 object-cover transition-transform duration-500 ease-in-out group-hover:scale-110"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent" />
+              <div className="absolute bottom-0 p-6">
+                <p className="text-sm font-medium text-gray-300">{project.category}</p>
+                <h3 className="text-2xl font-semibold text-white mt-2">{project.title}</h3>
               </div>
             </div>
-          </div>
+          ))}
         </div>
       </div>
-      <div id="contact"></div>
     </div>
   );
-}
+};
+
+export default LatestWork;

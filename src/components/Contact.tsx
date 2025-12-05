@@ -1,79 +1,112 @@
-/* eslint-disable jsx-a11y/alt-text */
 /* eslint-disable @next/next/no-img-element */
-import map from "../images/map.webp";
-export default function Contact() {
+import React from 'react';
+import { FiPhone, FiMail, FiMapPin } from 'react-icons/fi';
+
+const Contact = () => {
   return (
-    <>
-      <div id="contact" className="bg-gradient-to-br from-white via-purple-50 to-blue-50 m-auto py-20 px-5">
-        <div className="mx-auto max-sm:text-center max-lg:place-items-center grid max-w-2xl grid-cols-1 items-center gap-x-8 gap-y-16 px-4 py-24 sm:px-6 sm:py-32 lg:max-w-7xl lg:grid-cols-2 lg:px-8">
-          <div className="max-w-75">
-            <h1 className="text-center text-5xl font-bold bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text text-transparent mb-4">Get In Touch</h1>
-            <p className="text-center text-gray-600 mb-8 text-lg">Have a project in mind? Contact us for a free consultation and quote.</p>
-            <div className="line">
-              <div className="form-group mb-6">
-                <label htmlFor="usr" className="text-xl font-semibold text-gray-700 mb-2 block">
-                  Name
-                </label>
-                <input type="text" className="form-control w-full px-4 py-3 rounded-xl border-2 border-gray-200 focus:border-purple-500 focus:outline-none transition-all duration-300" id="usr" placeholder="Your Name" />
-              </div>
-              <div className="form-group mb-6">
-                <label htmlFor="mail" className="text-xl font-semibold text-gray-700 mb-2 block">
-                  E-mail
-                </label>
-                <input type="email" className="form-control w-full px-4 py-3 rounded-xl border-2 border-gray-200 focus:border-purple-500 focus:outline-none transition-all duration-300" id="mail" placeholder="your@email.com" />
-              </div>
-              <div className="form-group mb-6">
-                <label htmlFor="comment" className="text-xl font-semibold text-gray-700 mb-2 block">
-                  Message
-                </label>
-                <textarea
-                  className="form-control w-full px-4 py-3 rounded-xl border-2 border-gray-200 focus:border-purple-500 focus:outline-none transition-all duration-300"
-                  rows={5}
-                  id="comment"
-                  placeholder="Tell us about your project..."
-                ></textarea>
-              </div>
-              <button type="button" className="btn btn_color text-white px-8 py-4 mb-5 rounded-xl font-semibold text-lg w-full">
-                <span>Send Message</span>
-              </button>
-              <div className="mt-8 p-6 bg-white rounded-2xl shadow-lg">
-                <p className="text-gray-800 font-bold text-xl mb-4 text-center">Or reach us directly</p>
-                <div className="space-y-3">
-                  <p className="text-gray-700 flex items-center justify-center gap-2">📞 <span className="font-medium">+91-9828101833</span></p>
-                  <p className="text-gray-700 flex items-center justify-center gap-2">📧 <span className="font-medium">jangidpooranmal01@gmail.com</span></p>
+    <div id="contact" className="bg-gray-50 py-24 sm:py-32">
+      <div className="mx-auto max-w-7xl px-6 lg:px-8">
+        <div className="max-w-2xl mx-auto text-center">
+          <h2 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">Get In Touch</h2>
+          <p className="mt-6 text-lg leading-8 text-gray-600">
+            Have a project in mind? We d love to hear from you. Fill out the form below or reach out to us directly.
+          </p>
+        </div>
+        <div className="mt-16 grid grid-cols-1 lg:grid-cols-2 gap-12">
+          {/* Contact Form */}
+          <div className="bg-white p-8 rounded-lg shadow-lg">
+            <form>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                <div>
+                  <label htmlFor="first-name" className="block text-sm font-semibold leading-6 text-gray-900">
+                    First name
+                  </label>
+                  <div className="mt-2.5">
+                    <input
+                      type="text"
+                      id="first-name"
+                      autoComplete="given-name"
+                      className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-purple-600 sm:text-sm sm:leading-6"
+                    />
+                  </div>
                 </div>
+                <div>
+                  <label htmlFor="last-name" className="block text-sm font-semibold leading-6 text-gray-900">
+                    Last name
+                  </label>
+                  <div className="mt-2.5">
+                    <input
+                      type="text"
+                      id="last-name"
+                      autoComplete="family-name"
+                      className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-purple-600 sm:text-sm sm:leading-6"
+                    />
+                  </div>
+                </div>
+                <div className="sm:col-span-2">
+                  <label htmlFor="email" className="block text-sm font-semibold leading-6 text-gray-900">
+                    Email
+                  </label>
+                  <div className="mt-2.5">
+                    <input
+                      type="email"
+                      id="email"
+                      autoComplete="email"
+                      className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-purple-600 sm:text-sm sm:leading-6"
+                    />
+                  </div>
+                </div>
+                <div className="sm:col-span-2">
+                  <label htmlFor="message" className="block text-sm font-semibold leading-6 text-gray-900">
+                    Message
+                  </label>
+                  <div className="mt-2.5">
+                    <textarea
+                      id="message"
+                      rows={4}
+                      className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-purple-600 sm:text-sm sm:leading-6"
+                      defaultValue={''}
+                    />
+                  </div>
+                </div>
+              </div>
+              <div className="mt-8">
+                <button
+                  type="submit"
+                  className="w-full rounded-md bg-purple-600 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-purple-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-purple-600"
+                >
+                  Send Message
+                </button>
+              </div>
+            </form>
+          </div>
+          {/* Contact Info & Map */}
+          <div className="space-y-8">
+            <div className="bg-white p-8 rounded-lg shadow-lg">
+              <h3 className="text-2xl font-bold text-gray-900 mb-4">Contact Information</h3>
+              <div className="space-y-4 text-gray-600">
+                <p className="flex items-center">
+                  <FiMail className="w-5 h-5 mr-3 text-purple-600" />
+                  <span>jangidpooranmal01@gmail.com</span>
+                </p>
+                <p className="flex items-center">
+                  <FiPhone className="w-5 h-5 mr-3 text-purple-600" />
+                  <span>+91-9828101833</span>
+                </p>
+                <p className="flex items-center">
+                  <FiMapPin className="w-5 h-5 mr-3 text-purple-600" />
+                  <span>123 Modern Lane, City, State 12345</span>
+                </p>
               </div>
             </div>
-          </div>
-          <div className="">
-            {/* <img src={map.src} className="rounded-xl"/> */}
-            <div className="flip-card1">
-              <div className="flip-card-inner1 ">
-                <div className="flip-card-front">
-                  <img
-                    src={map.src}
-                    alt="Walnut card tray with white powder coated steel divider and 3 punchout holes."
-                    className="rounded-lg bg-gray-100 work-video"
-                  />
-                </div>
-                <div className="flip-card-back">
-                  <img
-                    src={map.src}
-                    alt="Walnut card tray with white powder coated steel divider and 3 punchout holes."
-                    className="rounded-lg bg-gray-100 work-video opacity-25"
-                  />
-                  <button
-                    type="button"
-                    className="btn btn-success w-72 m-auto position-absolute right-40"
-                  >
-                    <span className="text-4xl">Get Directions</span>
-                  </button>
-                </div>
-              </div>
+            <div className="rounded-lg shadow-lg overflow-hidden">
+              <img src="/images/map.webp" alt="Location map" className="w-full h-80 object-cover" />
             </div>
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
-}
+};
+
+export default Contact;
