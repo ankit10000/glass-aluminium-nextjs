@@ -87,7 +87,7 @@ const Contact = () => {
               <div className="space-y-4 text-gray-600">
                 <p className="flex items-center">
                   <FiMail className="w-5 h-5 mr-3 text-purple-600" />
-                  <span>jangidpooranmal01@gmail.com</span>
+                  <span>thefloordecor.jpr@gmail.com</span>
                 </p>
                 <p className="flex items-center">
                   <FiPhone className="w-5 h-5 mr-3 text-purple-600" />
@@ -95,12 +95,12 @@ const Contact = () => {
                 </p>
                 <p className="flex items-center">
                   <FiMapPin className="w-5 h-5 mr-3 text-purple-600" />
-                  <span>123 Modern Lane, City, State 12345</span>
+                  <span>Petunia 201, Manglam Aananda, Sanganer<br/>Jaipur, Rajasthan 302029</span>
                 </p>
               </div>
             </div>
             <div className="rounded-lg shadow-lg overflow-hidden">
-              <img src="/images/map.webp" alt="Location map" className="w-full h-80 object-cover" />
+              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d648.7623690798424!2d75.76703621391037!3d26.81316107705573!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2sin!4v1764956449994!5m2!1sen!2sin" width="600" height="450" allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
             </div>
           </div>
         </div>

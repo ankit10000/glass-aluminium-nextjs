@@ -30,9 +30,9 @@ const Footer = () => {
           <div className="col-span-1 md:col-span-1">
             <h3 className="text-xl font-semibold mb-4">Contact Us</h3>
             <div className="text-gray-400 space-y-3">
-              <p>123 Modern Lane, Suite 100<br/>City, State 12345</p>
-              <p>Email: contact@company.com</p>
-              <p>Phone: (123) 456-7890</p>
+              <p>Petunia 201, Manglam Aananda, Sanganer<br/>Jaipur, Rajasthan 302029</p>
+              <p>thefloordecor.jpr@gmail.com</p>
+              <p>Phone: +91-9828101833</p>
             </div>
           </div>
 
