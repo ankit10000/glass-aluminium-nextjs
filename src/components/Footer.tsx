@@ -1,6 +1,6 @@
 "use client";
 import React from 'react';
-import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn } from 'react-icons/fa';
+import { FaFacebookF, FaInstagram, FaLinkedinIn } from 'react-icons/fa';
 
 const Footer = () => {
   return (
@@ -42,9 +42,6 @@ const Footer = () => {
             <div className="flex space-x-4">
               <a href="#" className="bg-gray-800 hover:bg-purple-500 p-3 rounded-full transition-colors">
                 <FaFacebookF />
-              </a>
-              <a href="#" className="bg-gray-800 hover:bg-purple-500 p-3 rounded-full transition-colors">
-                <FaTwitter />
               </a>
               <a href="#" className="bg-gray-800 hover:bg-purple-500 p-3 rounded-full transition-colors">
                 <FaInstagram />
