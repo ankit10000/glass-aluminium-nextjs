@@ -20,14 +20,13 @@ export default function Nav() {
       <div className="container">
         <div className="nav-header">
          
-          <h1 id="fh5co-logo">
+          <h1 id="fh5co-logo" className="modern-logo">
             <Link href="/">
-              <i className="icon-home"></i>
-              <span>The Floor Decor</span>
+              <span className="logo-text">The Floor Decor</span>
             </Link>
           </h1>
           <IoMenu
-            color="#3D8DAE"
+            color="#1a1a1a"
             id="navbarToggler"
             size={30}
             className="navbar-toggler-nav"

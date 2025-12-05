@@ -7,7 +7,7 @@ function Headertop() {
 
 
   return (
-    <div> 
+    <div id="home">
       <div className="headbar" >
         <div className="container">
         <div className="inner_text_headbar1"><LuPhoneCall size={16} color="white" className="mt-1 mx-2"/>Talk with us +91-9828101833</div>

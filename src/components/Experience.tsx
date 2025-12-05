@@ -2,24 +2,45 @@
 "use client";
 
 import { useEffect } from "react";
+import { motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 
 const stats = [
-  { id: 1, name: 'Customers Satisfied', value: '1000+' },
-  { id: 2, name: 'Assets under holding', value: '$119 trillion' },
-  { id: 3, name: 'Projects Completed', value: '50+' },
+  { id: 1, name: 'Happy Clients', value: '1000+' },
+  { id: 2, name: 'Years of Excellence', value: '15+' },
+  { id: 3, name: 'Projects Delivered', value: '500+' },
+  { id: 4, name: 'Product Categories', value: '4' },
 ]
 export default function LogoClouds() {
+  const [ref, inView] = useInView({
+    threshold: 0.2,
+    triggerOnce: true,
+  });
+
     return (
-      <div className="bg-white py-24 sm:py-32">
+      <div className="modern-stats-section">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
-        <dl className="grid grid-cols-1 gap-x-8 gap-y-16 text-center lg:grid-cols-3">
-          {stats.map((stat) => (
-            <div key={stat.id} className="mx-auto flex max-w-xs flex-col gap-y-4">
-              <dt className="text-base leading-7 text-gray-600">{stat.name}</dt>
-              <dd className="order-first text-3xl font-semibold tracking-tight text-black sm:text-5xl">
-                {stat.value}
-              </dd>
-            </div>
+        <motion.h2
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          viewport={{ once: true }}
+          className="modern-section-title text-center"
+        >
+          Proven Excellence
+        </motion.h2>
+        <dl ref={ref} className="modern-stats-grid">
+          {stats.map((stat, index) => (
+            <motion.div
+              key={stat.id}
+              initial={{ opacity: 0, scale: 0.8 }}
+              animate={inView ? { opacity: 1, scale: 1 } : {}}
+              transition={{ duration: 0.6, delay: index * 0.1 }}
+              className="stat-card"
+            >
+              <dd className="stat-value">{stat.value}</dd>
+              <dt className="stat-label">{stat.name}</dt>
+            </motion.div>
           ))}
         </dl>
       </div>

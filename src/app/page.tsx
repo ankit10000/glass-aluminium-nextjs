@@ -15,6 +15,7 @@ import Furniture from "@/components/Furniture";
 import Glass from "@/components/Glass";
 import Aluminium from "@/components/Aluminium";
 import Iron from "@/components/Iron";
+import Services from "@/components/Services";
 
 // import Video from "@/components/Video";
 
@@ -27,6 +28,7 @@ export default function Home() {
       <Headertop />
       <Slider />
       <Experience />
+      <Services />
       <Category />
       <Glass />
       <Furniture />
